@@ -52,12 +52,6 @@ res1=$(date +%s.%N)
 echo -e '\0033\0143'
 clear
 
-echo -e "${cya}Building ${bldcya}ParanoidAndroid v$VERSION ${txtrst}";
-
-echo -e "${cya}"
-./vendor/pa/tools/getdevicetree.py $DEVICE
-echo -e "${txtrst}"
-
 # decide what command to execute
 case "$EXTRAS" in
    threads)
