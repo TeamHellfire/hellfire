@@ -30,9 +30,9 @@ echo -e "${bldblu} Set CCACHE ${txtrst}"
 ccache -M 50
 
 # get current version
-MAJOR=$(cat $DIR/vendor/pa/config/common.mk | grep 'PRODUCT_VERSION_MAJOR = *' | sed  's/PRODUCT_VERSION_MAJOR = //g')
-MINOR=$(cat $DIR/vendor/pa/config/common.mk | grep 'PRODUCT_VERSION_MINOR = *' | sed  's/PRODUCT_VERSION_MINOR = //g')
-MAINTENANCE=$(cat $DIR/vendor/pa/config/common.mk | grep 'PRODUCT_VERSION_MAINTENANCE = *' | sed  's/PRODUCT_VERSION_MAINTENANCE = //g')
+MAJOR=$(cat $DIR/vendor/hf/config/common.mk | grep 'PRODUCT_VERSION_MAJOR = *' | sed  's/PRODUCT_VERSION_MAJOR = //g')
+MINOR=$(cat $DIR/vendor/hf/config/common.mk | grep 'PRODUCT_VERSION_MINOR = *' | sed  's/PRODUCT_VERSION_MINOR = //g')
+MAINTENANCE=$(cat $DIR/vendor/hf/config/common.mk | grep 'PRODUCT_VERSION_MAINTENANCE = *' | sed  's/PRODUCT_VERSION_MAINTENANCE = //g')
 VERSION=$MAJOR.$MINOR$MAINTENANCE
 
 # if we have not extras, reduce parameter index by 1
