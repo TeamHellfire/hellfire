@@ -80,7 +80,7 @@ echo -e "${bldblu}Setting up environment ${txtrst}"
 # lunch device
 echo -e ""
 echo -e "${bldblu}Starting compilation ${txtrst}"
-brunch "cm_$DEVICE-userdebug" -j6;
+brunch "hf_$DEVICE-userdebug" -j6;
 
 echo -e ""
 
